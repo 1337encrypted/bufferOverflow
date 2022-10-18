@@ -14,3 +14,9 @@ x/40x $esp
 
 #run with arguments
 run <commandline input>
+
+#to examine a function or a variable 
+x <function/variable name>
+
+#to print the address of that function or variable
+p <function/variable>

