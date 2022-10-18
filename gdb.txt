@@ -20,3 +20,6 @@ x <function/variable name>
 
 #to print the address of that function or variable
 p <function/variable>
+
+#input a file while running the  program
+r < /path/filename
