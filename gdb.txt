@@ -1,0 +1,16 @@
+disasseble *main
+
+#sets the syntax as intel style
+set disassembly-flavor intel
+
+#sets a breakpoint at the specified register
+b * <register>
+
+#shows the current registers and the addresses $esp (stack start pointer), $ebp (stack base pointer)
+info registers
+
+#Examine the stack for 40 bytes
+x/40x $esp
+
+#run with arguments
+run <commandline input>
